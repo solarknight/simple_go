@@ -1,22 +1,21 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func main() {
-    fmt.Println("Hello, world\n")
-		beyondHello()
+	fmt.Println("Hello, world")
+	beyondHello()
 }
 
 func beyondHello() {
-		var x int = 3
-		y := 4
-		sum, prod := learnMultiple(x, y)
-		fmt.Println("sum:", sum , "prod:", prod)
+	var x = 5
+	y := 4
+	sum, prod := learnMultiple(x, y)
+	fmt.Println("sum:", sum, "prod:", prod)
 }
 
 func learnMultiple(x, y int) (sum, prod int) {
-		return x + y, x * y
+	return x + y, x * y
 }
-
