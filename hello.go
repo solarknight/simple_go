@@ -1,19 +1,17 @@
 package main
 
-import (
-	"fmt"
-)
+import fm "fmt"
 
 func main() {
-	fmt.Println("Hello, world")
+	fm.Println("Hello, world")
 	beyondHello()
 }
 
 func beyondHello() {
-	var x = 5
-	y := 4
+	var x = 2
+	y := 7
 	sum, prod := learnMultiple(x, y)
-	fmt.Println("sum:", sum, "prod:", prod)
+	fm.Println("sum:", sum, "prod:", prod)
 }
 
 func learnMultiple(x, y int) (sum, prod int) {
