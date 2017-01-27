@@ -10,6 +10,14 @@ const HappyNewYear = "Happy new year!  Happy new year! Happy new year!" +
 const MultiLineHappyNewYear = `Happy new year! Happy new year! Happy new year! Happy new year!
  Happy new year! Happy new year! Happy new year! `
 
+var v = 5
+
+// T type definition demo
+type T struct{}
+
+func init() {
+}
+
 func main() {
 	fm.Println("Hello, world")
 	beyondHello()
