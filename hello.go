@@ -1,6 +1,9 @@
 package main
 
-import fm "fmt"
+import (
+	fm "fmt"
+	"os"
+)
 
 // HappyNewYear is a long string
 const HappyNewYear = "Happy new year!  Happy new year! Happy new year!" +
@@ -23,6 +26,15 @@ func main() {
 	beyondHello()
 	printLongString(HappyNewYear)
 	printLongString(MultiLineHappyNewYear)
+
+	// get os
+	shell := os.Getenv("SHELL")
+	fm.Printf("Current using shell is %s\n", shell)
+	// get system path
+	path := os.Getenv("PATH")
+	fm.Printf("The system path is %s\n", path)
+
+	printVariable()
 }
 
 func beyondHello() {
@@ -38,4 +50,19 @@ func learnMultiple(x, y int) (sum, prod int) {
 
 func printLongString(s string) {
 	fm.Println(s)
+}
+
+func printVariable() {
+	fm.Println(v)
+	defAndPrintNewV()
+}
+
+func defAndPrintNewV() {
+	v := 3
+	fm.Println(v)
+	v2()
+}
+
+func v2() {
+	fm.Println(v)
 }
