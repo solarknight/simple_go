@@ -2,7 +2,10 @@ package main
 
 import (
 	fm "fmt"
+	"math/rand"
 	"os"
+	"runtime"
+	"time"
 )
 
 // HappyNewYear is a long string
@@ -19,6 +22,7 @@ var v = 5
 type T struct{}
 
 func init() {
+	fm.Println("Current system is", runtime.GOOS)
 }
 
 func main() {
@@ -35,6 +39,8 @@ func main() {
 	fm.Printf("The system path is %s\n", path)
 
 	printVariable()
+	testRandom()
+	capsStr("Hello, world!")
 }
 
 func beyondHello() {
@@ -65,4 +71,21 @@ func defAndPrintNewV() {
 
 func v2() {
 	fm.Println(v)
+}
+
+func testRandom() {
+	for i := 0; i < 10; i++ {
+		a := rand.Int()
+		fm.Printf("%d / ", a)
+	}
+	for i := 0; i < 5; i++ {
+		r := rand.Intn(8)
+		fm.Printf("%d / ", r)
+	}
+	fm.Println()
+	timens := int64(time.Now().Nanosecond())
+	rand.Seed(timens)
+	for i := 0; i < 10; i++ {
+		fm.Printf("%2.2f / \n", 100*rand.Float32())
+	}
 }
