@@ -41,6 +41,8 @@ func main() {
 	printVariable()
 	testRandom()
 	capsStr("Hello, world!")
+	switchDemo()
+	forRange()
 }
 
 func beyondHello() {
