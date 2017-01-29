@@ -48,6 +48,7 @@ func main() {
 	fm.Println(fibo(5))
 	funcParameter()
 	timeSub()
+	trySlice()
 }
 
 func beyondHello() {
