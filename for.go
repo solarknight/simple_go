@@ -13,4 +13,5 @@ func forRange() {
 		fmt.Printf("%d ", v)
 		v = 5
 	}
+	fmt.Println()
 }

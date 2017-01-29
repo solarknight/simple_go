@@ -43,6 +43,8 @@ func main() {
 	capsStr("Hello, world!")
 	switchDemo()
 	forRange()
+	funcDeclare()
+	deferFunc()
 }
 
 func beyondHello() {
