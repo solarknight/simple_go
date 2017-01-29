@@ -49,6 +49,7 @@ func main() {
 	funcParameter()
 	timeSub()
 	trySlice()
+	tryMap()
 }
 
 func beyondHello() {
