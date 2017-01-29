@@ -45,6 +45,9 @@ func main() {
 	forRange()
 	funcDeclare()
 	deferFunc()
+	fm.Println(fibo(5))
+	funcParameter()
+	timeSub()
 }
 
 func beyondHello() {
