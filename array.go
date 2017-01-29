@@ -1,6 +1,6 @@
 package main
 
-var array1 = [5]int{1, 2, 3, 4, 5}
+var array1 = [5]int{4, 1, 3, 2, 5}
 var array2 = [...]int{1, 2, 3, 4, 5}
 var array3 = []int{1, 2, 3, 4, 5}
 var array4 = [5]int{2: 3, 4: 5}
