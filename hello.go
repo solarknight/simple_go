@@ -50,6 +50,7 @@ func main() {
 	timeSub()
 	trySlice()
 	tryMap()
+	tryRegexp()
 }
 
 func beyondHello() {
