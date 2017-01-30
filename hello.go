@@ -51,6 +51,7 @@ func main() {
 	trySlice()
 	tryMap()
 	tryRegexp()
+	tryStruct()
 }
 
 func beyondHello() {
