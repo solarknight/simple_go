@@ -54,6 +54,11 @@ func main() {
 	tryStruct()
 	tryInterface()
 	tryReflect()
+	tryScan()
+	tryFile()
+	tryJson()
+	tryGob()
+	tryError()
 }
 
 func beyondHello() {
