@@ -72,7 +72,7 @@ func timePrint() func() {
 func tryTickerAndTimer() {
 	var dur time.Duration = 1e8
 	chRate := time.Tick(dur) // a tick every 1/10th of a second
-	chTimer := time.After(10 * dur)
+	chTimer := time.After(time.Second)
 	timeCall := timePrint()
 
 	for {
