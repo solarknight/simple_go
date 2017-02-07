@@ -43,7 +43,6 @@ func suck(ch1, ch2 <-chan int) {
 			fmt.Printf("Received value from channel 2: %d\n", v)
 		}
 	}
-
 }
 
 func tryTicker() {
