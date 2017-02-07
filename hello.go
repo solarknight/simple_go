@@ -59,6 +59,11 @@ func main() {
 	tryJson()
 	tryGob()
 	tryError()
+	tryPanic()
+	tryExec()
+	// tryCoroutine()
+	tryChannel()
+	trySelect()
 }
 
 func beyondHello() {
