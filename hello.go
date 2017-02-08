@@ -68,6 +68,7 @@ func main() {
 	// tryDial()
 	// trySocket()
 	tryClosure()
+	tryHTTPReq()
 
 	// start web server
 	// startWebServer()
