@@ -67,8 +67,9 @@ func main() {
 	// tryLazyEvaluation()
 	// tryDial()
 	// trySocket()
-	tryClosure()
+	// tryClosure()
 	// tryHTTPReq()
+	practise()
 
 	// start web server
 	// startWebServer()
