@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"log"
+	"net"
 	"strings"
 	"unicode/utf8"
 )
@@ -37,7 +39,8 @@ func practise() {
 	// stringPractise()
 	// mapPractise()
 	// structPractise()
-	interfacePractise()
+	// interfacePractise()
+	tcpPractise()
 }
 
 func stringPractise() {
@@ -136,5 +139,15 @@ func interfacePractise() {
 		fmt.Println("worker is a human!")
 	default:
 		fmt.Println("worker is unknown!")
+	}
+}
+
+func tcpPractise() {
+	port := 8080
+	addr := fmt.Sprintf(":%d", port)
+	log.Println("addr is ", addr)
+	_, err := net.ResolveTCPAddr("tcp", addr)
+	if err != nil {
+		log.Println("can't resolve addr", addr, err.Error())
 	}
 }
